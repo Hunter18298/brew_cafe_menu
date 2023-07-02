@@ -3,9 +3,17 @@ import 'package:brew_restaurant_menu/english/categories.dart';
 import 'package:brew_restaurant_menu/kurdish/categoriesk.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
+  Future<void> _makePhoneCall(String phoneNumber) async {
+    final Uri launchUri = Uri(
+      scheme: 'tel',
+      path: phoneNumber,
+    );
+    await launchUrl(launchUri);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -184,35 +192,45 @@ class HomePage extends StatelessWidget {
                   Positioned(
                     top: screenHeight * 0.02,
                     left: screenWidth * 0.05,
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.phone,
-                          color: Colors.white,
-                        ),
-                        Text(
-                          "+964 750 450 5050",
-                          style: GoogleFonts.montserrat(
-                              fontSize: 14, color: Colors.white),
-                        ),
-                      ],
+                    child: GestureDetector(
+                      onTap: () {
+                        _makePhoneCall("+964 770 700 2743");
+                      },
+                      child: Row(
+                        children: [
+                          const Icon(
+                            Icons.phone,
+                            color: Colors.white,
+                          ),
+                          Text(
+                            "+964 770 700 2743",
+                            style: GoogleFonts.montserrat(
+                                fontSize: 14, color: Colors.white),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Positioned(
                     top: screenHeight * 0.02,
                     right: screenWidth * 0.1,
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.phone,
-                          color: Colors.white,
-                        ),
-                        Text(
-                          "+964 750 450 5050",
-                          style: GoogleFonts.montserrat(
-                              fontSize: 14, color: Colors.white),
-                        ),
-                      ],
+                    child: GestureDetector(
+                      onTap: () {
+                        _makePhoneCall("+964 750 688 2828");
+                      },
+                      child: Row(
+                        children: [
+                          const Icon(
+                            Icons.phone,
+                            color: Colors.white,
+                          ),
+                          Text(
+                            "+964 750 688 2828",
+                            style: GoogleFonts.montserrat(
+                                fontSize: 14, color: Colors.white),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Positioned(

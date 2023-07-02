@@ -123,7 +123,6 @@ class HomeCategory extends StatelessWidget {
             width: screenWidth,
             height: screenHeight * 0.6,
             child: GridView.builder(
-              physics: const NeverScrollableScrollPhysics(),
               padding: const EdgeInsets.symmetric(vertical: 15.0),
               itemCount: name.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
