@@ -1,18 +1,34 @@
 import 'package:brew_restaurant_menu/arabic/categoriesA.dart';
 import 'package:brew_restaurant_menu/english/categories.dart';
 import 'package:brew_restaurant_menu/kurdish/categoriesk.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  HomePage({super.key});
+  final Uri location = Uri.parse("https://goo.gl/maps/xYtPeYs2FAKEWsR3A");
+  final Uri facebookUrl =
+      Uri.parse("https://www.facebook.com/brew.coffee.rest");
+  final Uri instagramUrl =
+      Uri.parse("https://www.instagram.com/brew.cafe.rest/?hl=en");
   Future<void> _makePhoneCall(String phoneNumber) async {
     final Uri launchUri = Uri(
       scheme: 'tel',
       path: phoneNumber,
     );
     await launchUrl(launchUri);
+  }
+
+  Future<void> _launchInBrowser(Uri url) async {
+    if (!await launchUrl(
+      url,
+      mode: LaunchMode.externalApplication,
+    )) {
+      throw Exception('Could not launch $url');
+    }
   }
 
   @override
@@ -32,6 +48,10 @@ class HomePage extends StatelessWidget {
             ],
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
+          ),
+          image: DecorationImage(
+            fit: BoxFit.cover,
+            image: AssetImage("assets/b.png"),
           ),
         ),
         child: ListView(
@@ -234,38 +254,65 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    top: screenHeight * 0.07,
+                    top: screenHeight * 0.08,
                     left: screenWidth * 0.05,
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.pin_drop,
-                          color: Colors.white,
-                        ),
-                        Text(
-                          "Shorsh, Opposite Gas Shorsh",
-                          style: GoogleFonts.montserrat(
-                              fontSize: 14, color: Colors.white),
-                        ),
-                      ],
+                    child: GestureDetector(
+                      onTap: () {
+                        _launchInBrowser(location);
+                      },
+                      child: Row(
+                        children: [
+                          const Icon(
+                            Icons.pin_drop,
+                            color: Colors.white,
+                          ),
+                          Text(
+                            "Shorsh, Opposite Gas Shorsh",
+                            style: GoogleFonts.montserrat(
+                                fontSize: 14, color: Colors.white),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Positioned(
                     top: screenHeight * 0.07,
-                    right: screenWidth * 0.05,
-                    child: const Row(
-                      children: [
-                        Icon(
-                          Icons.facebook,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Icon(
-                          Icons.snapchat,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                      ],
+                    right: screenWidth * 0.2,
+                    child: GestureDetector(
+                      onTap: () {
+                        _launchInBrowser(facebookUrl);
+                      },
+                      child: const Icon(
+                        Icons.facebook,
+                        color: Colors.white,
+                        size: 35,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: screenHeight * 0.068,
+                    right: screenWidth * 0.1,
+                    child: GestureDetector(
+                      onTap: () {
+                        _launchInBrowser(instagramUrl);
+                      },
+                      child: const FaIcon(
+                        FontAwesomeIcons.instagram,
+                        color: Colors.white,
+                        size: 35,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    bottom: screenHeight * 0.02,
+                    right: screenWidth * 0.3,
+                    child: Text(
+                      "Powered by The S",
+                      style: GoogleFonts.montserrat(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ],

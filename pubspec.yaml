@@ -9,8 +9,10 @@ environment:
 dependencies:
   carousel_slider: ^4.2.1
   fast_cached_network_image: ^1.2.0
+  feather_icons: ^1.2.0
   flutter:
     sdk: flutter
+  font_awesome_flutter: ^10.5.0
   google_fonts: ^5.1.0
   http: ^1.1.0
   image_network: ^2.5.4+1
