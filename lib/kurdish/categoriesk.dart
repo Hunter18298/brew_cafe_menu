@@ -6,23 +6,23 @@ import 'package:google_fonts/google_fonts.dart';
 class HomeCategoryK extends StatelessWidget {
   HomeCategoryK({super.key});
   final offerList = [
-    "https://imgur.com/EiPiQER.jpeg",
-    "https://imgur.com/oPIpit4.jpeg",
-    "https://imgur.com/niIwvii.jpeg"
+    "https://i.imgur.com/EiPiQER.jpeg",
+    "https://i.imgur.com/oPIpit4.jpeg",
+    "https://i.imgur.com/niIwvii.jpeg"
   ];
   final List images = [
-    "https://imgur.com/3UgujKn.jpeg",
-    "https://imgur.com/RBWm1E0.jpeg",
-    "https://imgur.com/s99IKRC.jpeg",
-    "https://imgur.com/dTEQmiY.jpeg",
-    "https://imgur.com/zbgGxSn.jpeg",
-    "https://imgur.com/8GCiO4z.jpeg",
-    "https://imgur.com/nVlTF5Q.jpeg",
-    "https://imgur.com/6szJPbV.jpeg",
-    "https://imgur.com/7jqn9QK.jpeg",
-    "https://imgur.com/3jCCy7G.jpeg",
-    "https://imgur.com/4CGbWj7.jpeg",
-    "https://imgur.com/aQgr3jC.jpeg"
+    "https://i.imgur.com/3UgujKn.jpeg",
+    "https://i.imgur.com/RBWm1E0.jpeg",
+    "https://i.imgur.com/s99IKRC.jpeg",
+    "https://i.imgur.com/dTEQmiY.jpeg",
+    "https://i.imgur.com/zbgGxSn.jpeg",
+    "https://i.imgur.com/8GCiO4z.jpeg",
+    "https://i.imgur.com/nVlTF5Q.jpeg",
+    "https://i.imgur.com/6szJPbV.jpeg",
+    "https://i.imgur.com/7jqn9QK.jpeg",
+    "https://i.imgur.com/3jCCy7G.jpeg",
+    "https://i.imgur.com/4CGbWj7.jpeg",
+    "https://i.imgur.com/aQgr3jC.jpeg"
   ];
 
   final List name = [
