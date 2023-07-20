@@ -628,5 +628,10 @@
     "price": "5,000",
     "image": "https://i.imgur.com/zPbfI38.jpg",
     "category": 11
-  }
+  },
+ 	{"id": 1, "name": "میلکشەیکی ئۆریۆ", "price": "5,000", "image": "https://i.imgur.com/APjpYe7.jpeg", "category": 12},
+		{"id": 2, "name": "میلکشەیکی نوتێلا", "price": "5,000", "image": "https://i.imgur.com/1YgTg3t.jpeg", "category": 12},
+		{"id": 3, "name": "میلکشەیکی شتراوبەری", "price": "5,000", "image": "https://i.imgur.com/LTc5WyP.jpeg", "category": 12},
+		{"id": 4, "name": "میلکشەیکی لۆتوس", "price": "5,000", "image": "https://i.imgur.com/4UNsFsx.png", "category": 12},
+		{"id": 5, "name": "میلکشەیکی ڤانیلا", "price": "5,000", "image": "https://i.imgur.com/BHb7zoK.png", "category": 12}
 ]

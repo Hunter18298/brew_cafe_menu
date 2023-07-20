@@ -3,8 +3,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class HomeCategory extends StatelessWidget {
-  HomeCategory({super.key});
+class HomeCategoryT extends StatelessWidget {
+  HomeCategoryT({super.key});
   final offerList = [
     "https://i.imgur.com/EiPiQER.jpeg",
     "https://i.imgur.com/oPIpit4.jpeg",
@@ -27,18 +27,18 @@ class HomeCategory extends StatelessWidget {
   ];
 
   final List name = [
-    "Hot drinks",
-    "Soft drinks",
-    "Shisha",
+    "Sıcak içecekler",
+    "Soğuk içecekler",
+    "Nargile",
     "Pizza",
     "Burger",
-    "Sandwich",
-    "Meals",
+    "Sandviç",
+    "Yemekler",
     "Pasta",
-    "Salad",
-    "Dessert",
-    "Juice",
-    "Cocktail",
+    "Salata",
+    "Tatlı",
+    "Meyve suyu",
+    "Kokteyl",
     "Milkshake"
   ];
 

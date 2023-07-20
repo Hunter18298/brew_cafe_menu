@@ -23,22 +23,24 @@ class HomeCategoryA extends StatelessWidget {
     "https://i.imgur.com/7jqn9QK.jpeg",
     "https://i.imgur.com/3jCCy7G.jpeg",
     "https://i.imgur.com/4CGbWj7.jpeg",
-    "https://i.imgur.com/aQgr3jC.jpeg"
+    "https://i.imgur.com/aQgr3jC.jpeg",
+    "https://i.imgur.com/vnTmNpI.jpeg"
   ];
 
   final List name = [
-    "المشروبات الساخنة",
-    "المشروبات الغازية",
-    "الشيشة",
-    "البيتزا",
-    "البرغر",
-    "الساندويتش",
-    "الوجبات",
-    "الباستا",
-    "السلطة",
-    "الحلویات",
-    "العصير",
-    "الكوكتيل"
+    "مشروبات ساخنة",
+    "مشروبات غازية",
+    "شيشة",
+    "بيتزا",
+    "برغر",
+    "ساندويتش",
+    "وجبات",
+    "باستا",
+    "سلطة",
+    "حلویات",
+    "عصير",
+    "كوكتيل",
+    "ميلكشيك"
   ];
 
   @override

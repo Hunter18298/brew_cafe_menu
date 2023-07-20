@@ -1,7 +1,7 @@
 import 'package:brew_restaurant_menu/arabic/categoriesA.dart';
 import 'package:brew_restaurant_menu/english/categories.dart';
 import 'package:brew_restaurant_menu/kurdish/categoriesk.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:brew_restaurant_menu/turkish/categories.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -175,7 +175,7 @@ class HomePage extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomeCategory()));
+                      MaterialPageRoute(builder: (context) => HomeCategoryT()));
                 },
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.symmetric(

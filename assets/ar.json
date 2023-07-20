@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "name": "اسبريسو واحد",
+    "name": "اسبريسو سنکل",
     "price": "3,000",
     "image": "https://i.imgur.com/YBbatfx.jpg",
     "category": 0
@@ -92,7 +92,7 @@
   },
   {
     "id": 13,
-    "name": "مشروب غازي",
+    "name": "مشروبات غازي",
     "price": "1,000",
     "image": "https://i.imgur.com/7ZstjdR.jpg",
     "category": 1
@@ -120,7 +120,7 @@
   },
   {
     "id": 17,
-    "name": "تايغر المكسيكي",
+    "name": "تايغر مكسيكي",
     "price": "4,000",
     "image": "https://i.imgur.com/YEyOA4l.jpg",
     "category": 1
@@ -134,7 +134,7 @@
   },
   {
     "id": 19,
-    "name": "ريدبول المكسيكي",
+    "name": "ريدبول مكسيكي",
     "price": "5,000",
     "image": "https://i.imgur.com/S3OUtGY.jpg",
     "category": 1
@@ -169,14 +169,14 @@
   },
   {
     "id": 24,
-    "name": "الإنجليزية",
+    "name": "إنجليزية",
     "price": "10,000",
     "image": "https://i.imgur.com/NlvF4GP.jpg",
     "category": 2
   },
   {
     "id": 25,
-    "name": "البغدادي",
+    "name": "بغدادي",
     "price": "10,000",
     "image": "https://i.imgur.com/NlvF4GP.jpg",
     "category": 2
@@ -211,14 +211,14 @@
   },
   {
     "id": 30,
-    "name": "بيتزا الدجاج",
+    "name": "بيتزا دجاج",
     "price": "7,000",
     "image": "https://i.imgur.com/wshgDyj.jpg",
     "category": 3
   },
   {
     "id": 31,
-    "name": "بيتزا اللحم",
+    "name": "بيتزا لحم",
     "price": "8,000",
     "image": "https://i.imgur.com/LpOgyWM.jpg",
     "category": 3
@@ -232,21 +232,21 @@
   },
   {
     "id": 33,
-    "name": "بيتزا البيبروني",
+    "name": "بيتزا بيبروني",
     "price": "8,000",
     "image": "https://i.imgur.com/YXCJbU4.jpg",
     "category": 3
   },
   {
     "id": 34,
-    "name": "بيتزا الخضار",
+    "name": "بيتزا خضار",
     "price": "6,000",
     "image": "https://i.imgur.com/Mk6ah4v.jpg",
     "category": 3
   },
   {
     "id": 35,
-    "name": "بيتزا المارغريتا",
+    "name": "بيتزا مارغريتا",
     "price": "5,000",
     "image": "https://i.imgur.com/ax2OKys.jpg",
     "category": 3
@@ -316,7 +316,7 @@
   },
   {
     "id": 45,
-    "name": "برغر ستيك الدجاج",
+    "name": "برغر ستيك دجاج",
     "price": "4,000",
     "image": "https://i.imgur.com/mEJq7Cc.jpg",
     "category": 4
@@ -330,49 +330,49 @@
   },
   {
     "id": 47,
-    "name": "فحيتة الدجاج",
+    "name": "فاهيتة دجاج",
     "price": "5,000",
     "image": "https://i.imgur.com/OwrzX0c.jpg",
     "category": 5
   },
   {
     "id": 48,
-    "name": "فحيتة اللحم",
+    "name": "فاهيتة لحم",
     "price": "6,000",
     "image": "https://i.imgur.com/HaLp3m0.jpg",
     "category": 5
   },
   {
     "id": 49,
-    "name": "كاساديا اللحم",
+    "name": "كاساديا لحم",
     "price": "7,000",
     "image": "https://i.imgur.com/rYaRVNz.jpg",
     "category": 5
   },
   {
     "id": 50,
-    "name": "كاساديا الدجاج",
+    "name": "كاساديا دجاج",
     "price": "6,000",
     "image": "https://i.imgur.com/au5q6oB.jpg",
     "category": 5
   },
   {
     "id": 51,
-    "name": "فيلادلفيا الدجاج",
+    "name": "فيلادلفيا دجاج",
     "price": "6,000",
     "image": "https://i.imgur.com/E3DrBJY.jpg",
     "category": 5
   },
   {
     "id": 52,
-    "name": "فيلادلفيا اللحم",
+    "name": "فيلادلفيا لحم",
     "price": "7,000",
     "image": "https://i.imgur.com/lh9amTr.jpg",
     "category": 5
   },
   {
     "id": 53,
-    "name": "صاج لحم تاوق 0.5 كغ",
+    "name": "صاج لحم تاوة 0.5 كغ",
     "price": "11,000",
     "image": "https://i.imgur.com/D0k9koO.jpg",
     "category": 6
@@ -386,14 +386,14 @@
   },
   {
     "id": 55,
-    "name": "طبق فحيتة الدجاج",
+    "name": "طبق فاهيتة دجاج",
     "price": "8,000",
     "image": "https://i.imgur.com/XPlP8HM.jpg",
     "category": 6
   },
   {
     "id": 56,
-    "name": "طبق فحيتة اللحم",
+    "name": "طبق فاهيتة لحم",
     "price": "10,000",
     "image": "https://i.imgur.com/4Yo0BsI.jpg",
     "category": 6
@@ -407,14 +407,14 @@
   },
   {
     "id": 58,
-    "name": "ألفريدو الدجاج",
+    "name": "ألفريدو دجاج",
     "price": "7,000",
     "image": "https://i.imgur.com/EfEGpp3.jpg",
     "category": 7
   },
   {
     "id": 59,
-    "name": "ألفريدو اللحم",
+    "name": "ألفريدو لحم",
     "price": "9,000",
     "image": "https://i.imgur.com/hJeHzUh.jpg",
     "category": 7
@@ -428,42 +428,42 @@
   },
   {
     "id": 61,
-    "name": "سباغيتي اللحم",
+    "name": "سباغيتي لحم",
     "price": "7,000",
     "image": "https://i.imgur.com/ipiRtgr.jpg",
     "category": 7
   },
   {
     "id": 62,
-    "name": "سباغيتي الدجاج",
+    "name": "سباغيتي دجاج",
     "price": "6,000",
     "image": "https://i.imgur.com/22ToriE.jpg",
     "category": 7
   },
   {
     "id": 63,
-    "name": "سباغيتي الخضار",
+    "name": "سباغيتي خضار",
     "price": "5,000",
     "image": "https://i.imgur.com/rRfeqvJ.jpg",
     "category": 7
   },
   {
     "id": 64,
-    "name": "سلطة الدجاج بریو",
+    "name": "سلطة دجاج بریو",
     "price": "7,000",
     "image": "https://i.imgur.com/XW2AagX.jpg",
     "category": 8
   },
   {
     "id": 65,
-    "name": "سلطة السيزر",
+    "name": "سلطة سيزر",
     "price": "7,000",
     "image": "https://i.imgur.com/8VAXrog.jpg",
     "category": 8
   },
   {
     "id": 66,
-    "name": "سلطة اليونانية",
+    "name": "سلطة يونانية",
     "price": "6,000",
     "image": "https://i.imgur.com/DnMLWS8.jpg",
     "category": 8
@@ -477,7 +477,7 @@
   },
   {
     "id": 68,
-    "name": "الشرق الأوسطية",
+    "name": "شرق أوسطية",
     "price": "4,000",
     "image": "https://i.imgur.com/neHZ3vi.jpg",
     "category": 8
@@ -491,14 +491,14 @@
   },
   {
     "id": 70,
-    "name": "كيكة تريليسي",
+    "name": "كيكة تراليشة",
     "price": "4,000",
     "image": "https://i.imgur.com/UrJTHyh.jpg",
     "category": 9
   },
   {
     "id": 71,
-    "name": "كيكة الفستق",
+    "name": "كيكة فستق",
     "price": "5,000",
     "image": "https://i.imgur.com/Uy7XvxM.jpg",
     "category": 9
@@ -512,7 +512,7 @@
   },
   {
     "id": 73,
-    "name": "كيكة الشوكولاتة",
+    "name": "كيكة شوكولاتة",
     "price": "5,000",
     "image": "https://i.imgur.com/fgqP4uE.jpg",
     "category": 9
@@ -533,63 +533,63 @@
   },
   {
     "id": 76,
-    "name": "كريب الفواكه",
+    "name": "كريب فواكه",
     "price": "7,000",
     "image": "https://i.imgur.com/gcrEVW6.jpg",
     "category": 9
   },
   {
     "id": 77,
-    "name": "عصير البرتقال",
+    "name": "عصير برتقال",
     "price": "4,000",
     "image": "https://i.imgur.com/TDYRq4d.jpg",
     "category": 10
   },
   {
     "id": 78,
-    "name": "حليب الموز",
+    "name": "حليب موز",
     "price": "5,000",
     "image": "https://i.imgur.com/SCCNhdw.jpg",
     "category": 10
   },
   {
     "id": 79,
-    "name": "عصير الأناناس",
+    "name": "عصير أناناس",
     "price": "5,000",
     "image": "https://i.imgur.com/px0frJS.jpg",
     "category": 10
   },
   {
     "id": 80,
-    "name": "عصير الرمان",
+    "name": "عصير رمان",
     "price": "6,000",
     "image": "https://i.imgur.com/EGK06Af.jpg",
     "category": 10
   },
   {
     "id": 81,
-    "name": "الليمون بالنعناع",
+    "name": "ليمون بالنعناع",
     "price": "5,000",
     "image": "https://i.imgur.com/iJyxosV.jpg",
     "category": 10
   },
   {
     "id": 82,
-    "name": "عصير الكوكتيل",
+    "name": "عصير كوكتيل",
     "price": "6,000",
     "image": "https://i.imgur.com/J1tGqU7.jpg",
     "category": 10
   },
   {
     "id": 83,
-    "name": "البرتقال والجزر",
+    "name": "برتقال وجزر",
     "price": "5,000",
     "image": "https://i.imgur.com/z79yYM4.jpg",
     "category": 10
   },
   {
     "id": 84,
-    "name": "عصير الجزر",
+    "name": "عصير جزر",
     "price": "6,000",
     "image": "https://i.imgur.com/sPaHSoO.jpg",
     "category": 10
@@ -617,16 +617,21 @@
   },
   {
     "id": 88,
-    "name": "موجيتو بلو سکاي",
+    "name": "موهيتو بلو سکاي",
     "price": "5,000",
     "image": "https://i.imgur.com/plWrwpp.jpg",
     "category": 11
   },
   {
     "id": 89,
-    "name": "موجيتو الفراولة",
+    "name": "موجيتو فراولة",
     "price": "5,000",
     "image": "https://i.imgur.com/zPbfI38.jpg",
     "category": 11
-  }
+  },
+  	{"id": 1, "name": "ميلكشيك أوريو", "price": "5,000", "image": "https://i.imgur.com/APjpYe7.jpeg", "category": 12},
+		{"id": 2, "name": " ميلكشيك نوتيلا", "price": "5,000", "image": "https://i.imgur.com/1YgTg3t.jpeg", "category": 12},
+		{"id": 3, "name": "ميلكشيك فراولة", "price": "5,000", "image": "https://i.imgur.com/LTc5WyP.jpeg", "category": 12},
+		{"id": 4, "name": "ميلكشيك لوتس", "price": "5,000", "image": "https://i.imgur.com/4UNsFsx.png", "category": 12},
+		{"id": 5, "name": "ميلكشيك فانيليا", "price": "5,000", "image": "https://i.imgur.com/BHb7zoK.png", "category": 12}
 ]
