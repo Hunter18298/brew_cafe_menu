@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -26,7 +27,7 @@ class _ProductsAState extends State<ProductsA> {
   }
 
   Future<void> loadData() async {
-    var getJson = await rootBundle.loadString("assets/ar.json");
+    var getJson = await rootBundle.loadString("assets/Menu_Arabic.json");
     setState(() {
       data = json.decode(getJson);
       data = data
@@ -82,7 +83,7 @@ class _ProductsAState extends State<ProductsA> {
           var getData = data[index];
 
           return MenuWidgetA(
-            imageString: getData['image'],
+            imageString: '/cat${widget.category}/${index + 1}.png',
             menuFoodName: getData['name'],
             menuFoodPrice: getData['price'],
           );

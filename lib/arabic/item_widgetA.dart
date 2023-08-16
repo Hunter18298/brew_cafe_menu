@@ -27,9 +27,8 @@ class MenuWidgetA extends StatelessWidget {
           borderRadius: BorderRadius.circular(25),
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: NetworkImage(
-              imageString ??
-                  "https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?w=740&t=st=1667390038~exp=1667390638~hmac=582fd2a88f8daa1df8b87f6de03d3feab00b475f91dc1fb89d3824ac3da63d06",
+            image: AssetImage(
+              imageString.toString(),
             ),
           ),
         ),
