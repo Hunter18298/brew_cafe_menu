@@ -1,7 +1,10 @@
+import 'dart:io';
+import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_image_compress/flutter_image_compress.dart';
 
-class MenuWidgetK extends StatelessWidget {
+class MenuWidgetK extends StatefulWidget {
   final String? imageString;
   final String menuFoodName;
   final String menuFoodPrice;
@@ -13,10 +16,44 @@ class MenuWidgetK extends StatelessWidget {
       required this.menuFoodPrice});
 
   @override
+  _MenuWidgetKState createState() => _MenuWidgetKState();
+}
+
+class _MenuWidgetKState extends State<MenuWidgetK> {
+  Uint8List? compressedImage;
+
+  @override
+  void initState() {
+    super.initState();
+    _compressImage();
+  }
+
+  Future<void> _compressImage() async {
+    final Uint8List imageBytes = await File(widget.imageString!).readAsBytes();
+    final result = await FlutterImageCompress.compressWithList(
+      imageBytes,
+      minWidth: 500,
+      minHeight: 500,
+      quality: 60,
+    );
+    setState(() {
+      compressedImage = result;
+    });
+  }
+
+  ImageProvider<Object> _getImage() {
+    if (compressedImage == null) {
+      return AssetImage(widget.imageString!);
+    }
+    return MemoryImage(compressedImage!);
+  }
+
+  @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     final screenWidth = size.width;
     final screenHeight = size.height;
+
     return SizedBox(
       height: screenHeight * 0.3,
       child: Container(
@@ -27,10 +64,7 @@ class MenuWidgetK extends StatelessWidget {
           borderRadius: BorderRadius.circular(25),
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: NetworkImage(
-              imageString ??
-                  "https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?w=740&t=st=1667390038~exp=1667390638~hmac=582fd2a88f8daa1df8b87f6de03d3feab00b475f91dc1fb89d3824ac3da63d06",
-            ),
+            image: _getImage(),
           ),
         ),
         child: SizedBox(
@@ -77,14 +111,14 @@ class MenuWidgetK extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          menuFoodPrice,
+                          widget.menuFoodPrice,
                           style: GoogleFonts.montserrat(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                           ),
                         ),
                         Text(
-                          menuFoodName,
+                          widget.menuFoodName,
                           style: GoogleFonts.notoSansArabic(
                             fontWeight: FontWeight.w600,
                             fontSize: 16,

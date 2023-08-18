@@ -324,3 +324,46 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+class _PrecacheImageWrapper extends StatefulWidget {
+  final Widget child;
+
+  _PrecacheImageWrapper({required this.child});
+
+  @override
+  __PrecacheImageWrapperState createState() => __PrecacheImageWrapperState();
+}
+
+class __PrecacheImageWrapperState extends State<_PrecacheImageWrapper> {
+  late Future<void> _loadingImages;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadingImages = _loadImages(context);
+  }
+
+  Future<void> _loadImages(BuildContext context) async {
+    for (var asset in [
+      ...HomeCategoryA().offerList,
+      ...HomeCategoryA().images,
+    ]) {
+      await precacheImage(AssetImage(asset), context);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder<void>(
+      future: _loadingImages,
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.done) {
+          return widget.child;
+        }
+        return const Center(
+            child:
+                CircularProgressIndicator()); // loading indicator while images are being precached
+      },
+    );
+  }
+}

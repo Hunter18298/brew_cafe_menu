@@ -6,24 +6,24 @@ import 'package:google_fonts/google_fonts.dart';
 class HomeCategory extends StatelessWidget {
   HomeCategory({super.key});
   final offerList = [
-    "https://i.imgur.com/EiPiQER.jpeg",
-    "https://i.imgur.com/oPIpit4.jpeg",
-    "https://i.imgur.com/niIwvii.jpeg"
+    "assets/offers/1.png",
+    "assets/offers/2.png",
+    "assets/offers/3.png",
   ];
   final List images = [
-    "https://i.imgur.com/3UgujKn.jpeg",
-    "https://i.imgur.com/RBWm1E0.jpeg",
-    "https://i.imgur.com/s99IKRC.jpeg",
-    "https://i.imgur.com/dTEQmiY.jpeg",
-    "https://i.imgur.com/zbgGxSn.jpeg",
-    "https://i.imgur.com/8GCiO4z.jpeg",
-    "https://i.imgur.com/nVlTF5Q.jpeg",
-    "https://i.imgur.com/6szJPbV.jpeg",
-    "https://i.imgur.com/7jqn9QK.jpeg",
-    "https://i.imgur.com/3jCCy7G.jpeg",
-    "https://i.imgur.com/4CGbWj7.jpeg",
-    "https://i.imgur.com/aQgr3jC.jpeg",
-    "https://i.imgur.com/vnTmNpI.jpeg"
+    "assets/Categories/1.png",
+    "assets/Categories/2.png",
+    "assets/Categories/3.png",
+    "assets/Categories/4.png",
+    "assets/Categories/5.png",
+    "assets/Categories/6.png",
+    "assets/Categories/7.png",
+    "assets/Categories/8.png",
+    "assets/Categories/9.png",
+    "assets/Categories/10.png",
+    "assets/Categories/11.png",
+    "assets/Categories/12.png",
+    "assets/Categories/13.png",
   ];
 
   final List name = [
@@ -123,8 +123,9 @@ class HomeCategory extends StatelessWidget {
           const Divider(),
           SizedBox(
             width: screenWidth,
-            height: screenHeight * 0.6,
+            height: screenHeight,
             child: GridView.builder(
+              physics: const NeverScrollableScrollPhysics(),
               padding: const EdgeInsets.symmetric(vertical: 15.0),
               itemCount: name.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

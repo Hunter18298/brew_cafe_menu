@@ -1,7 +1,10 @@
+import 'dart:io';
+import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_image_compress/flutter_image_compress.dart';
 
-class MenuWidgetA extends StatelessWidget {
+class MenuWidgetA extends StatefulWidget {
   final String? imageString;
   final String menuFoodName;
   final String menuFoodPrice;
@@ -13,10 +16,44 @@ class MenuWidgetA extends StatelessWidget {
       required this.menuFoodPrice});
 
   @override
+  _MenuWidgetAState createState() => _MenuWidgetAState();
+}
+
+class _MenuWidgetAState extends State<MenuWidgetA> {
+  Uint8List? compressedImage;
+
+  @override
+  void initState() {
+    super.initState();
+    _compressImage();
+  }
+
+  Future<void> _compressImage() async {
+    final Uint8List imageBytes = await File(widget.imageString!).readAsBytes();
+    final result = await FlutterImageCompress.compressWithList(
+      imageBytes,
+      minWidth: 500,
+      minHeight: 500,
+      quality: 60,
+    );
+    setState(() {
+      compressedImage = result;
+    });
+  }
+
+  ImageProvider<Object> _getImage() {
+    if (compressedImage == null) {
+      return AssetImage(widget.imageString!);
+    }
+    return MemoryImage(compressedImage!);
+  }
+
+  @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     final screenWidth = size.width;
     final screenHeight = size.height;
+
     return SizedBox(
       height: screenHeight * 0.3,
       child: Container(
@@ -27,9 +64,7 @@ class MenuWidgetA extends StatelessWidget {
           borderRadius: BorderRadius.circular(25),
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: AssetImage(
-              imageString.toString(),
-            ),
+            image: _getImage(),
           ),
         ),
         child: SizedBox(
@@ -76,14 +111,14 @@ class MenuWidgetA extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          menuFoodPrice,
+                          widget.menuFoodPrice,
                           style: GoogleFonts.montserrat(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                           ),
                         ),
                         Text(
-                          menuFoodName,
+                          widget.menuFoodName,
                           style: GoogleFonts.notoSansArabic(
                             fontWeight: FontWeight.w600,
                             fontSize: 16,

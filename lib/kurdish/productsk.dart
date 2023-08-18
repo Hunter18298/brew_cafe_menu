@@ -27,7 +27,7 @@ class _ProductsKState extends State<ProductsK> {
   }
 
   Future<void> loadData() async {
-    var getJson = await rootBundle.loadString("assets/ku.json");
+    var getJson = await rootBundle.loadString("assets/Menu_Kurdish.json");
     setState(() {
       data = json.decode(getJson);
       data = data
@@ -83,7 +83,7 @@ class _ProductsKState extends State<ProductsK> {
           var getData = data[index];
 
           return MenuWidgetK(
-            imageString: getData['image'],
+            imageString: '/cat${widget.category}/${index + 1}.png',
             menuFoodName: getData['name'],
             menuFoodPrice: getData['price'],
           );

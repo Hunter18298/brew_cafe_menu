@@ -123,8 +123,9 @@ class HomeCategoryK extends StatelessWidget {
           const Divider(),
           SizedBox(
             width: screenWidth,
-            height: screenHeight * 0.6,
+            height: screenHeight,
             child: GridView.builder(
+              physics: const NeverScrollableScrollPhysics(),
               padding: const EdgeInsets.symmetric(vertical: 15.0),
               itemCount: name.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

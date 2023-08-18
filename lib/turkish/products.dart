@@ -27,7 +27,7 @@ class _ProductsStateT extends State<ProductsT> {
   }
 
   Future<void> loadData() async {
-    var getJson = await rootBundle.loadString("assets/turkish.json");
+    var getJson = await rootBundle.loadString("assets/Menu_Turkish.json");
     setState(() {
       data = json.decode(getJson);
       data = data
@@ -82,7 +82,7 @@ class _ProductsStateT extends State<ProductsT> {
         itemBuilder: (context, index) {
           var getData = data[index];
           return MenuWidgetT(
-            imageString: getData['image'],
+            imageString: '/cat${widget.category}/${index + 1}.png',
             menuFoodName: getData['name'],
             menuFoodPrice: getData['price'],
           );
