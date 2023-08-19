@@ -2,15 +2,18 @@ import 'package:brew_restaurant_menu/arabic/productsA.dart';
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class HomeCategoryA extends StatelessWidget {
+class HomeCategoryA extends StatefulWidget {
   HomeCategoryA({super.key});
   final offerList = [
     "assets/offers/1.png",
     "assets/offers/2.png",
     "assets/offers/3.png",
   ];
+
   final List images = [
     "assets/Categories/1.png",
     "assets/Categories/2.png",
@@ -42,6 +45,36 @@ class HomeCategoryA extends StatelessWidget {
     "كوكتيل",
     "ميلكشيك"
   ];
+  @override
+  State<HomeCategoryA> createState() => _HomeCategoryAState();
+}
+
+class _HomeCategoryAState extends State<HomeCategoryA> {
+  // Let's use a list to store the compressed images
+  List<Uint8List?> compressedImages = [];
+  @override
+  void initState() {
+    super.initState();
+    _compressImages();
+  }
+
+  _compressImages() async {
+    for (var img in widget.images) {
+      // Load image as bytes
+      final bytes = await rootBundle.load(img)
+        ..buffer.asUint8List();
+      Uint8List uint8List = bytes.buffer.asUint8List();
+      // Compress the image
+      final result = await FlutterImageCompress.compressWithList(
+        uint8List,
+        minHeight: 512, // define the minHeight you want
+        minWidth: 512, // define the minWidth you want
+        quality: 60, // Define the quality, between 0 and 100
+      );
+      compressedImages.add(result);
+    }
+    setState(() {}); // This is to refresh the widget once images are compressed
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -101,7 +134,7 @@ class HomeCategoryA extends StatelessWidget {
               ),
               autoPlayCurve: Curves.fastOutSlowIn,
             ),
-            items: offerList.map((i) {
+            items: widget.offerList.map((i) {
               return Builder(
                 builder: (BuildContext context) {
                   return Container(
@@ -128,13 +161,13 @@ class HomeCategoryA extends StatelessWidget {
             child: GridView.builder(
               physics: const NeverScrollableScrollPhysics(),
               padding: const EdgeInsets.symmetric(vertical: 15.0),
-              itemCount: name.length,
+              itemCount: widget.name.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
                 crossAxisSpacing: 10,
               ),
               itemBuilder: (context, index) {
-                String getNames = name[index];
+                String getNames = widget.name[index];
                 return InkWell(
                   onTap: () {
                     Navigator.push(
@@ -142,7 +175,7 @@ class HomeCategoryA extends StatelessWidget {
                       MaterialPageRoute(
                         builder: (context) => ProductsA(
                           category: index,
-                          categoryNames: name[index],
+                          categoryNames: widget.name[index],
                         ),
                       ),
                     );
@@ -153,7 +186,8 @@ class HomeCategoryA extends StatelessWidget {
                     child: Column(
                       children: [
                         CircleAvatar(
-                          backgroundImage: NetworkImage(images[index]),
+                          backgroundImage:
+                              MemoryImage(compressedImages[index]!),
                           radius: 45,
                         ),
                         SizedBox(
