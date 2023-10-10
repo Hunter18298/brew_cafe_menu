@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import 'package:brew_restaurant_menu/english/products.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_image_compress/flutter_image_compress.dart';
@@ -62,25 +63,34 @@ class _HomeCategoryState extends State<HomeCategory> {
   }
 
   _compressImages() async {
-    for (var img in widget.images) {
-      // Load image as bytes
-      final bytes = await rootBundle.load(img)
-        ..buffer.asUint8List();
-      Uint8List uint8List = bytes.buffer.asUint8List();
-      // Compress the image
-      final result = await FlutterImageCompress.compressWithList(
-        uint8List,
-        minHeight: 512, // define the minHeight you want
-        minWidth: 512, // define the minWidth you want
-        quality: 60, // Define the quality, between 0 and 100
-      );
-      compressedImages.add(result);
+    try {
+      for (var img in widget.images) {
+        final bytes = await rootBundle.load(img);
+        Uint8List uint8List = bytes.buffer.asUint8List();
+
+        final result = await FlutterImageCompress.compressWithList(
+          uint8List,
+          minHeight: 512,
+          minWidth: 512,
+          quality: 60,
+        );
+
+        compressedImages.add(result);
+      }
+    } catch (e) {
+      if (kDebugMode) {
+        print("Error compressing image: $e");
+      }
     }
-    setState(() {}); // This is to refresh the widget once images are compressed
+    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
+    if (kDebugMode) {
+      print(
+          "$compressedImages  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+    }
     Size size = MediaQuery.of(context).size;
     final screenHeight = size.height;
     final screenWidth = size.width;
@@ -149,7 +159,7 @@ class _HomeCategoryState extends State<HomeCategory> {
                       borderRadius: BorderRadius.circular(25),
                       image: DecorationImage(
                         fit: BoxFit.cover,
-                        image: _compressImages(),
+                        image: NetworkImage(i),
                       ),
                     ),
                   );
