@@ -199,7 +199,7 @@ class _HomeCategoryState extends State<HomeCategory> {
                     child: Column(
                       children: [
                         CircleAvatar(
-                          backgroundImage: NetworkImage(widget.images[index]!),
+                          backgroundImage: AssetImage(widget.images[index]!),
                           radius: 45,
                         ),
                         SizedBox(

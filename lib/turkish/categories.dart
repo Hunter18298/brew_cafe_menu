@@ -188,7 +188,7 @@ class _HomeCategoryTState extends State<HomeCategoryT> {
                     child: Column(
                       children: [
                         CircleAvatar(
-                          backgroundImage: NetworkImage(widget.images[index]!),
+                          backgroundImage: AssetImage(widget.images[index]!),
                           radius: 45,
                         ),
                         SizedBox(
