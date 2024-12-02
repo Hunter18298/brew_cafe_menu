@@ -11,9 +11,9 @@ import 'package:flutter/src/material/carousel.dart' as material_carousel;
 class HomeCategoryA extends StatefulWidget {
   HomeCategoryA({super.key});
   final offerList = [
-    "assets/offers/1.png",
-    "assets/offers/2.png",
-    "assets/offers/3.png",
+    "/assets/offers/1.png",
+    "/assets/offers/2.png",
+    "/assets/offers/3.png",
   ];
 
   final List images = [
