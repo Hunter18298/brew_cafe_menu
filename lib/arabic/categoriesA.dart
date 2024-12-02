@@ -17,19 +17,19 @@ class HomeCategoryA extends StatefulWidget {
   ];
 
   final List images = [
-    "assets/categories/1.png",
-    "assets/categories/2.png",
-    "assets/categories/3.png",
-    "assets/categories/4.png",
-    "assets/categories/5.png",
-    "assets/categories/6.png",
-    "assets/categories/7.png",
-    "assets/categories/8.png",
-    "assets/categories/9.png",
-    "assets/categories/10.png",
-    "assets/categories/11.png",
-    "assets/categories/12.png",
-    "assets/categories/13.png",
+    "assets/Categories/1.png",
+    "assets/Categories/2.png",
+    "assets/Categories/3.png",
+    "assets/Categories/4.png",
+    "assets/Categories/5.png",
+    "assets/Categories/6.png",
+    "assets/Categories/7.png",
+    "assets/Categories/8.png",
+    "assets/Categories/9.png",
+    "assets/Categories/10.png",
+    "assets/Categories/11.png",
+    "assets/Categories/12.png",
+    "assets/Categories/13.png",
   ];
 
   final List name = [
