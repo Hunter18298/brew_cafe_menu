@@ -34007,7 +34007,7 @@ $0(){var s=A.kg(new A.V2(),null,t.z)
 A.dC(this.a).fV(s)},
 $S:0}
 A.V2.prototype={
-$1(a){return new A.m3(A.a(["assets/assets/offers/1.png","assets/assets/offers/2.png","assets/assets/offers/3.png"],t.s),["assets/assets/categories/1.png","assets/assets/categories/2.png","assets/assets/categories/3.png","assets/assets/categories/4.png","assets/assets/categories/5.png","assets/assets/categories/6.png","assets/assets/categories/7.png","assets/assets/categories/8.png","assets/assets/categories/9.png","assets/assets/categories/10.png","assets/assets/categories/11.png","assets/assets/categories/12.png","assets/assets/categories/13.png"],["S\u0131cak i\xe7ecekler","So\u011fuk i\xe7ecekler","Nargile","Pizza","Burger","Sandvi\xe7","Yemekler","Pasta","Salata","Tatl\u0131","Meyve suyu","Kokteyl","Milkshake"],null)},
+$1(a){return new A.m3(A.a(["assets/assets/offers/1.png","assets/assets/offers/2.png","assets/assets/offers/3.png"],t.s),["assets/Categories/1.png","assets/Categories/2.png","assets/Categories/3.png","assets/Categories/4.png","assets/Categories/5.png","assets/Categories/6.png","assets/Categories/7.png","assets/Categories/8.png","assets/Categories/9.png","assets/Categories/10.png","assets/Categories/11.png","assets/Categories/12.png","assets/Categories/13.png"],["S\u0131cak i\xe7ecekler","So\u011fuk i\xe7ecekler","Nargile","Pizza","Burger","Sandvi\xe7","Yemekler","Pasta","Salata","Tatl\u0131","Meyve suyu","Kokteyl","Milkshake"],null)},
 $S:251}
 A.Va.prototype={
 $0(){this.a.ng("+964 770 0000000")},

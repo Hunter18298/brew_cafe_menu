@@ -1,7 +1,7 @@
-import 'package:brew_restaurant_menu/arabic/categoriesA.dart';
-import 'package:brew_restaurant_menu/english/categories.dart';
-import 'package:brew_restaurant_menu/kurdish/categoriesk.dart';
-import 'package:brew_restaurant_menu/turkish/categories.dart';
+import 'package:shaqlawa_restaurant_menu/arabic/categoriesA.dart';
+import 'package:shaqlawa_restaurant_menu/english/categories.dart';
+import 'package:shaqlawa_restaurant_menu/kurdish/categoriesk.dart';
+import 'package:shaqlawa_restaurant_menu/turkish/categories.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';

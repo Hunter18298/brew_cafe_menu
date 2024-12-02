@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:brew_restaurant_menu/english/item_widget.dart';
+import 'package:shaqlawa_restaurant_menu/english/item_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';

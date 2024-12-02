@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "brew_restaurant_menu" "\0"
+            VALUE "FileDescription", "shaqlawa_restaurant_menu" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "brew_restaurant_menu" "\0"
+            VALUE "InternalName", "shaqlawa_restaurant_menu" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "brew_restaurant_menu.exe" "\0"
-            VALUE "ProductName", "brew_restaurant_menu" "\0"
+            VALUE "OriginalFilename", "shaqlawa_restaurant_menu.exe" "\0"
+            VALUE "ProductName", "shaqlawa_restaurant_menu" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 import 'package:carousel_slider/carousel_controller.dart' as carousel_slider;
 import 'package:flutter/src/material/carousel.dart' as material_carousel;
-import 'package:brew_restaurant_menu/english/products.dart';
+import 'package:shaqlawa_restaurant_menu/english/products.dart';
 import 'package:carousel_slider/carousel_slider.dart' as slider;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -16,19 +16,19 @@ class HomeCategoryT extends StatefulWidget {
   ];
 
   final List images = [
-    "assets/assets/categories/1.png",
-    "assets/assets/categories/2.png",
-    "assets/assets/categories/3.png",
-    "assets/assets/categories/4.png",
-    "assets/assets/categories/5.png",
-    "assets/assets/categories/6.png",
-    "assets/assets/categories/7.png",
-    "assets/assets/categories/8.png",
-    "assets/assets/categories/9.png",
-    "assets/assets/categories/10.png",
-    "assets/assets/categories/11.png",
-    "assets/assets/categories/12.png",
-    "assets/assets/categories/13.png",
+    "assets/Categories/1.png",
+    "assets/Categories/2.png",
+    "assets/Categories/3.png",
+    "assets/Categories/4.png",
+    "assets/Categories/5.png",
+    "assets/Categories/6.png",
+    "assets/Categories/7.png",
+    "assets/Categories/8.png",
+    "assets/Categories/9.png",
+    "assets/Categories/10.png",
+    "assets/Categories/11.png",
+    "assets/Categories/12.png",
+    "assets/Categories/13.png",
   ];
 
   final List name = [

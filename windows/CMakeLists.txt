@@ -1,10 +1,10 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
-project(brew_restaurant_menu LANGUAGES CXX)
+project(shaqlawa_restaurant_menu LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
-set(BINARY_NAME "brew_restaurant_menu")
+set(BINARY_NAME "shaqlawa_restaurant_menu")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

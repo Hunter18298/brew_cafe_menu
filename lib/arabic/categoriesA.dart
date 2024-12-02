@@ -1,4 +1,4 @@
-import 'package:brew_restaurant_menu/arabic/productsA.dart';
+import 'package:shaqlawa_restaurant_menu/arabic/productsA.dart';
 
 import 'package:carousel_slider/carousel_slider.dart' as slider;
 import 'package:flutter/material.dart';
