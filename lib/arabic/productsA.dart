@@ -83,7 +83,7 @@ class _ProductsAState extends State<ProductsA> {
           var getData = data[index];
 
           return MenuWidgetA(
-            imageString: '/cat${widget.category}/${index + 1}.png',
+            imageString: 'assets/cat${widget.category}/${index + 1}.png',
             menuFoodName: getData['name'],
             menuFoodPrice: getData['price'],
           );
