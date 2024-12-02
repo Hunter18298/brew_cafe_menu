@@ -82,7 +82,7 @@ class _ProductsStateT extends State<ProductsT> {
         itemBuilder: (context, index) {
           var getData = data[index];
           return MenuWidgetT(
-            imageString: 'cat${widget.category}/${index + 1}.png',
+            imageString: 'assets/cat${widget.category}/${index + 1}.png',
             menuFoodName: getData['name'],
             menuFoodPrice: getData['price'],
           );
