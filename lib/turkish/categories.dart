@@ -10,25 +10,25 @@ import 'package:google_fonts/google_fonts.dart';
 
 class HomeCategoryT extends StatefulWidget {
   final offerList = [
-    "assets/offers/1.png",
-    "assets/offers/2.png",
-    "assets/offers/3.png",
+    "assets/assets/offers/1.png",
+    "assets/assets/offers/2.png",
+    "assets/assets/offers/3.png",
   ];
 
   final List images = [
-    "assets/Categories/1.png",
-    "assets/Categories/2.png",
-    "assets/Categories/3.png",
-    "assets/Categories/4.png",
-    "assets/Categories/5.png",
-    "assets/Categories/6.png",
-    "assets/Categories/7.png",
-    "assets/Categories/8.png",
-    "assets/Categories/9.png",
-    "assets/Categories/10.png",
-    "assets/Categories/11.png",
-    "assets/Categories/12.png",
-    "assets/Categories/13.png",
+    "assets/assets/categories/1.png",
+    "assets/assets/categories/2.png",
+    "assets/assets/categories/3.png",
+    "assets/assets/categories/4.png",
+    "assets/assets/categories/5.png",
+    "assets/assets/categories/6.png",
+    "assets/assets/categories/7.png",
+    "assets/assets/categories/8.png",
+    "assets/assets/categories/9.png",
+    "assets/assets/categories/10.png",
+    "assets/assets/categories/11.png",
+    "assets/assets/categories/12.png",
+    "assets/assets/categories/13.png",
   ];
 
   final List name = [
