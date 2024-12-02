@@ -33819,7 +33819,7 @@ $0(){A.dC(this.a).jn(null)},
 $S:0}
 A.a9f.prototype={
 $2(a,b){var s=this.a,r=J.b0(s.gfu(0),b),q=J.aC(r)
-return new A.mt("/cat"+s.a.c+"/"+(b+1)+".png",q.k(r,"name"),q.k(r,"price"),null)},
+return new A.mt("assets/cat"+s.a.c+"/"+(b+1)+".png",q.k(r,"name"),q.k(r,"price"),null)},
 $S:267}
 A.m0.prototype={
 ad(){return new A.JB(A.a([],t.nx))}}
@@ -33946,7 +33946,7 @@ $0(){A.dC(this.a).jn(null)},
 $S:0}
 A.a9n.prototype={
 $2(a,b){var s=this.a,r=J.b0(s.gfu(0),b),q=J.aC(r)
-return new A.ms("/cat"+s.a.c+"/"+(b+1)+".png",q.k(r,"name"),q.k(r,"price"),null)},
+return new A.ms("assets/cat"+s.a.c+"/"+(b+1)+".png",q.k(r,"name"),q.k(r,"price"),null)},
 $S:262}
 A.CS.prototype={
 ng(a){return this.VF(a)},
@@ -34000,7 +34000,7 @@ $0(){var s=A.kg(new A.V3(),null,t.z)
 A.dC(this.a).fV(s)},
 $S:0}
 A.V3.prototype={
-$1(a){return new A.m1(A.a(["/assets/offers/1.png","/assets/offers/2.png","/assets/offers/3.png"],t.s),["assets/Categories/1.png","assets/Categories/2.png","assets/Categories/3.png","assets/Categories/4.png","assets/Categories/5.png","assets/Categories/6.png","assets/Categories/7.png","assets/Categories/8.png","assets/Categories/9.png","assets/Categories/10.png","assets/Categories/11.png","assets/Categories/12.png","assets/Categories/13.png"],["\u0645\u0634\u0631\u0648\u0628\u0627\u062a \u0633\u0627\u062e\u0646\u0629","\u0645\u0634\u0631\u0648\u0628\u0627\u062a \u063a\u0627\u0632\u064a\u0629","\u0634\u064a\u0634\u0629","\u0628\u064a\u062a\u0632\u0627","\u0628\u0631\u063a\u0631","\u0633\u0627\u0646\u062f\u0648\u064a\u062a\u0634","\u0648\u062c\u0628\u0627\u062a","\u0628\u0627\u0633\u062a\u0627","\u0633\u0644\u0637\u0629","\u062d\u0644\u0648\u06cc\u0627\u062a","\u0639\u0635\u064a\u0631","\u0643\u0648\u0643\u062a\u064a\u0644","\u0645\u064a\u0644\u0643\u0634\u064a\u0643"],null)},
+$1(a){return new A.m1(A.a(["assets/offers/1.png","assets/offers/2.png","assets/offers/3.png"],t.s),["assets/Categories/1.png","assets/Categories/2.png","assets/Categories/3.png","assets/Categories/4.png","assets/Categories/5.png","assets/Categories/6.png","assets/Categories/7.png","assets/Categories/8.png","assets/Categories/9.png","assets/Categories/10.png","assets/Categories/11.png","assets/Categories/12.png","assets/Categories/13.png"],["\u0645\u0634\u0631\u0648\u0628\u0627\u062a \u0633\u0627\u062e\u0646\u0629","\u0645\u0634\u0631\u0648\u0628\u0627\u062a \u063a\u0627\u0632\u064a\u0629","\u0634\u064a\u0634\u0629","\u0628\u064a\u062a\u0632\u0627","\u0628\u0631\u063a\u0631","\u0633\u0627\u0646\u062f\u0648\u064a\u062a\u0634","\u0648\u062c\u0628\u0627\u062a","\u0628\u0627\u0633\u062a\u0627","\u0633\u0644\u0637\u0629","\u062d\u0644\u0648\u06cc\u0627\u062a","\u0639\u0635\u064a\u0631","\u0643\u0648\u0643\u062a\u064a\u0644","\u0645\u064a\u0644\u0643\u0634\u064a\u0643"],null)},
 $S:254}
 A.V9.prototype={
 $0(){var s=A.kg(new A.V2(),null,t.z)
@@ -34142,7 +34142,7 @@ $0(){A.dC(this.a).jn(null)},
 $S:0}
 A.a9j.prototype={
 $2(a,b){var s=this.a,r=J.b0(s.gfu(0),b),q=J.aC(r)
-return new A.mu("/cat"+s.a.c+"/"+(b+1)+".png",q.k(r,"name"),q.k(r,"price"),null)},
+return new A.mu("assets/cat"+s.a.c+"/"+(b+1)+".png",q.k(r,"name"),q.k(r,"price"),null)},
 $S:244}
 A.Dw.prototype={
 M(a){var s=null
